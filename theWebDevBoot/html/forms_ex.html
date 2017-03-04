@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Form Exercise</title>
+   </head>
+   <body>
+      <h1>Register</h1>
+
+      <form class="" method="post">
+         <label for="firstName">First Name: <input id="firstName"type="text" name="firstName" required></label>
+         <label for="lastName">Last Name: <input id="lastName"type="text" name="lastName" required></label>
+         <br>
+         <label for="male">Male: <input type="radio" name="sex" value="male" id="male"></label>
+         <label for="female">Female: <input type="radio" name="sex" value="female" id="female"></label>
+         <label for="other">Other: <input type="radio" name="sex" value="other" id="other"></label>
+         <br>
+         <label for="email">Email: <input type="email" name="email" id="email" required></label>
+         <label for="password">Password: <input type="password" name="password" id="password" required minlength="5" maxlength="10"> </label>
+         <br>
+         <label for="Birthday"> Birthday:
+            <select class="" name="month">
+               <option value="">Month</option>
+               <option value="jan">Jan</option>
+               <option value="feb">Feb</option>
+               <option value="mar">Mar</option>
+               <option value="Apr">Apr</option>
+            </select>
+            <select class="" name="day">
+               <option value="">Day</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+            </select>
+            <select class="" name="year">
+               <option value="">Year</option>
+               <option value="1990">1990</option>
+               <option value="1991">1991</option>
+               <option value="1992">1992</option>
+            </select>
+         </label>
+         <br>
+         <label for="terms">I agree to the terms and conditions <input type="checkbox" name="terms" value="true" required  id="terms"></label>
+         <br>
+         <input type="submit">
+      </form>
+   </body>
+</html>

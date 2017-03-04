@@ -1,0 +1,7 @@
+.word {
+background: lightblue;
+}
+
+.word:hover {
+   background: orange;
+}
