@@ -1,0 +1,31 @@
+/*
+   Background: #ABDCFB
+   TopBar: #088DA5
+   words: #32C07A
+   chosen:#1E7349
+   font: white
+*/
+body {
+   background: #ABDCFB;
+}
+.game{
+   margin: 0 auto;
+   max-width: 600px;
+}
+#chosen {
+   background: #1E7349;
+   padding-bottom: 30%;
+   width: 66%;
+   margin: 0 auto;
+   border-radius: 5px;
+}
+.words {
+   background-color: #32C07A;
+   float: left;
+   width: 30%;
+   margin: 1.667%;
+   padding-bottom: 30%;
+}
+.wrapper {
+   padding-top: 50px;
+}
