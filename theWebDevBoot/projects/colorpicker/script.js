@@ -30,7 +30,7 @@ function init() {
     }
 
     squares.forEach(function(box, i) {
-        box.style.background = colors[i];
+        //box.styrtile.background = colors[i];
         box.addEventListener("click", function() {
             var clickedColor = this.style.background;
             if (clickedColor === pickedColor) {
