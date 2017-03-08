@@ -2,7 +2,6 @@
  * Convert the color game from DOM api and vanilla js to jquery
  * will be usesful for factoring and converting code
  */
-
 var numSquares = 6;
 var colors = [];
 var pickedColor;
@@ -13,22 +12,20 @@ var h1 = $("h1");
 var resetButton = $('#reset');
 var modeBtn = $(".mode");
 
-// make reset fucntion (sets up game state)
-//first step generate random colors
-// 2 '' pick color
-// 3
+init()
+
 function init() {
     //Game mode event listener (easy or hard)
     modeBtn.on("click", function() {
         modeBtn.removeClass("selected");
         $(this).addClass("selected");
-        if ($(this).text === "Easy") {
+        if ($(this).text() === "Easy") {
             numSquares = 3;
         } else {
             numSquares = 6;
         }
         reset();
-        console.log($(this).text());
+        //console.log($(this).text());
     })
 
     //game logick and squares event listeners
@@ -36,11 +33,15 @@ function init() {
         //clickedColor = $(this).css("background");
         game($(this))
     });
+    resetButton.on("click", reset);
+    reset();
 }
+
 // factor game logic into new function
 
 function game(clickedSquare) {
-    if (clickedSquare.css("background") === pickedColor) {
+    var clickedColor = clickedSquare.css("background-color")
+    if (clickedColor === pickedColor) {
         messageDisplay.text("Correct!");
         squares.css("background", pickedColor);
         h1.css("background", clickedColor);
@@ -49,6 +50,7 @@ function game(clickedSquare) {
         clickedSquare.css("background", "#232323");
         messageDisplay.text("Try Again!");
     }
+
 }
 
 // make reset fucntion (sets up game state)
