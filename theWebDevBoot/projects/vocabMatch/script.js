@@ -21,5 +21,12 @@ var diction = [
     ["red", "rouge"]
 ]
 
-///
+/// data vars
 var numSquares = 6;
+var pickedWord = "";
+var score = 0;
+// element vars
+var wordsDiv = $(".words");
+var chosenDiv = $("#chosen");
+var resetBtn = $("#reset");
+var
