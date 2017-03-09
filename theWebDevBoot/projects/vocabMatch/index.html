@@ -10,29 +10,46 @@
 </head>
 
 <body>
-    <div>
-        <h1>The Vocab Picker</h1>
-    </div>
+
     <div id="menu">
-        <button id="reset"></button>
-        <span id="message"></span>
-        <button value="easy" class="mode">Eard</button>
-        <button value="hard" class="mode">Hard</button>
-    </div>
-    <div class="scoreboard">Score :<span id="score">0</span></div>
-    <div class="game">
-        <div id="chosen">WORD</div>
-        <div class="wrapper">
-            <div class="words">WORD</div>
-            <div class="words">WORD</div>
-            <div class="words">WORD</div>
-            <div class="words">WORD</div>
-            <div class="words">WORD</div>
-            <div class="words">WORD</div>
+        <div id="title">
+            <h1>Vocab Match</h1>
         </div>
+        <div id="buttons">
+            <button id="reset">Reset</button>
+            <span id="message"></span>
+            <button value="easy" class="mode">Easy</button>
+            <button value="hard" class="mode">Hard</button>
+        </div>
+        <div class="scoreboard">Score: <span id="score">0</span></div>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <div class="game">
+        <div id="chosen">
+            <p class="chosen"></p>
+        </div>
+        <div class="wrapper">
+            <div class="square">
+                <p class="words"></p>
+            </div>
+            <div class="square">
+                <p class="words"></p>
+            </div>
+            <div class="square">
+                <p class="words"></p>
+            </div>
+            <div class="square">
+                <p class="words"></p>
+            </div>
+            <div class="square">
+                <p class="words"></p>
+            </div>
+            <div class="square">
+                <p class="words"></p>
+            </div </div>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

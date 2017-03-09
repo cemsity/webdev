@@ -5,27 +5,97 @@
    chosen:#1E7349
    font: white
 */
+
 body {
-   background: #ABDCFB;
+    background: #ABDCFB;
+    color: white;
+    margin: 0;
+    font-family: "Arial";
 }
-.game{
-   margin: 0 auto;
-   max-width: 600px;
+#menu {
+   background: #088da5;
+
 }
+h1 {
+   text-align: center;
+   margin: 0;
+   padding: 20px;
+   line-height: 1.1;
+   font-size: 3.5rem;
+   text-transform: uppercase;
+}
+.scoreboard {
+   text-align: center;
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+
+#buttons{
+   background: white;
+   text-align: center;
+   height: 30px;
+}
+button {
+   border: none;
+   background: none;
+   text-transform: uppercase;
+   height: 100%;
+   font-weight: 700;
+   color: #088DA5;
+   margin:0;
+   transition: all 0.3s;
+   outline: none;
+}
+
+button:hover {
+   color: white;
+   background: #088DA5;
+}
+#message {
+   display: inline-block;
+   width: 20%;
+   color: #088DA5;
+   font-weight: bold;
+}
+.game {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
 #chosen {
-   background: #1E7349;
-   padding-bottom: 30%;
-   width: 66%;
-   margin: 0 auto;
-   border-radius: 5px;
+    background: #1E7349;
+    width: 66%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 7.5% 0;
+    margin-top: 10px;
 }
-.words {
-   background-color: #32C07A;
-   float: left;
-   width: 30%;
-   margin: 1.667%;
-   padding-bottom: 30%;
+
+.square {
+    background-color: #32C07A;
+    float: left;
+    width: 30%;
+    margin: 1.667%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5% 0;
 }
+.square:hover {
+   transition: all 0.2s;
+   box-shadow: 0px 0px 50px 0px rgba(255,255,255,1);
+}
+
+p {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.square p {
+    font-size: 2rem;
+}
+
 .wrapper {
-   padding-top: 50px;
+    padding-top: 50px;
 }
