@@ -12,51 +12,56 @@ body {
     margin: 0;
     font-family: "Arial";
 }
+
 #menu {
-   background: #088da5;
-
+    background: #088da5;
 }
+
 h1 {
-   text-align: center;
-   margin: 0;
-   padding: 20px;
-   line-height: 1.1;
-   font-size: 3.5rem;
-   text-transform: uppercase;
-}
-.scoreboard {
-   text-align: center;
-   font-size: 2rem;
-   text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.1;
+    font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
-#buttons{
-   background: white;
-   text-align: center;
-   height: 30px;
+.scoreboard {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
+
+#buttons {
+    background: white;
+    text-align: center;
+    height: 30px;
+}
+
 button {
-   border: none;
-   background: none;
-   text-transform: uppercase;
-   height: 100%;
-   font-weight: 700;
-   color: #088DA5;
-   margin:0;
-   transition: all 0.3s;
-   outline: none;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: #088DA5;
+    margin: 0;
+    transition: all 0.3s;
+    outline: none;
 }
 
 button:hover {
-   color: white;
-   background: #088DA5;
+    color: white;
+    background: #088DA5;
 }
+
 #message {
-   display: inline-block;
-   width: 20%;
-   color: #088DA5;
-   font-weight: bold;
+    display: inline-block;
+    width: 20%;
+    color: #088DA5;
+    font-weight: bold;
 }
+
 .game {
     margin: 0 auto;
     max-width: 600px;
@@ -81,9 +86,10 @@ button:hover {
     text-align: center;
     padding: 5% 0;
 }
+
 .square:hover {
-   transition: all 0.2s;
-   box-shadow: 0px 0px 50px 0px rgba(255,255,255,1);
+    transition: all 0.2s;
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
 }
 
 p {

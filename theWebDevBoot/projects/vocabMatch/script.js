@@ -54,6 +54,9 @@ squaresBtn.on('click', function() {
 });
 setup();
 resetBtn.on('click', function() {
+    score = 0;
+    messageDis.text("");
+    scoreDis.text(score);
     setup();
 });
 
